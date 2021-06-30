@@ -18,10 +18,11 @@ requirements:
   host:
     - python >=3.8
     - pip
-    - graph-tool >=2.40
+    - graph-tool-base >=2.40
   run:
     - python >=3.8 
-    - graph-tool >=2.40
+    - graph-tool-base >=2.40
+    - pycairo
     - scanpy
     - numpy
     - scipy
