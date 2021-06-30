@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv --use-feature=in-tree-build"
 
 requirements:
@@ -22,6 +22,7 @@ requirements:
   run:
     - python >=3.8 
     - graph-tool-base >=2.40
+    - pycairo
     - scanpy
     - numpy
     - scipy
