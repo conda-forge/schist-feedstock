@@ -1,5 +1,5 @@
 {% set name = "schist" %}
-{% set version = "0.7.7" %}
+{% set version = "0.7.8" %}
 
 package:
   name: {{ name }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/dawe/schist/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 09f837d9ffa908d29756f1a5232b947b0650c35c76c43e1876a866aef9a5c50a
+  sha256: 702b3a331a42b58fd3115d7b09bacfdc7c9bac9b454d067bb245234e3733a1b5
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv --use-feature=in-tree-build"
 
 requirements:
