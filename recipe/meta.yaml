@@ -27,17 +27,11 @@ requirements:
     - numpy
     - scipy
     - pandas
-    - leidenalg
     - anndata
-    - xlrd <2.0
 
 test:
   imports:
     - schist
-  requires:
-    - pip
-  commands:
-    - pip check
 
 about:
   home: https://github.com/dawe/schist
