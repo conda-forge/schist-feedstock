@@ -27,10 +27,7 @@ requirements:
     - numpy
     - scipy
     - pandas
-    - leidenalg
-    - python-igraph
     - anndata
-    - xlrd <2.0
 
 test:
   imports:
