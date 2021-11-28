@@ -28,6 +28,7 @@ requirements:
     - scipy
     - pandas
     - leidenalg
+    - python-igraph
     - anndata
     - xlrd <2.0
 
