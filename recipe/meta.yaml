@@ -12,7 +12,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv --use-feature=in-tree-build"
+  script: "{{ PYTHON }} -m pip install . -vv --use-feature=2020-resolver"
 
 requirements:
   host:
