@@ -1,5 +1,5 @@
 {% set name = "schist" %}
-{% set version = "0.7.16" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/dawe/schist/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 453a282e5ea5be3ebfc010db4e85c50f25e4db0ecd74bc60e7abfaae16eca7e8
+  sha256: 65d7f2d5c2f727f71e3d15aefc93f0d10738f6815bf8012a4c6f0d8ee8e5b020
 
 build:
   noarch: python
