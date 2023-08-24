@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/dawe/schist/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: d54866fb28d2b79f9cca1db5a4aff0988eafc1a1f378a1ec557a3f19c53187eb
+  sha256: 974fdbdb69f4a63700a5662cfb240d1cdf3b4d0bf26d5bfa777620c7df2b01d9
 
 build:
   noarch: python
