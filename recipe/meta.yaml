@@ -1,5 +1,5 @@
 {% set name = "schist" %}
-{% set version = "0.8.4" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/dawe/schist/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 93908806fddd3916442b4798dc77f8106781c686f1af6cd865b8cbf288019206
+  sha256: 43990e7be95e5b73d8a1267f65bab5b4dc4e194ab920cb0e2715990a5a8d3104
 
 build:
   noarch: python
@@ -30,6 +30,7 @@ requirements:
     - scipy
     - pandas
     - anndata
+    - mudata
 
 test:
   imports:
