@@ -12,18 +12,18 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 3
   script: "{{ PYTHON }} -m pip install . -vv "
 
 requirements:
   host:
     - python {{ python_min }}
     - pip
-    - graph-tool-base <2.60
+    - "graph-tool-base <2.60|>=2.90"
     - joblib >=1.3.0
   run:
     - python >={{ python_min }}
-    - graph-tool-base <2.60
+    - "graph-tool-base <2.60|>=2.90"
     - joblib >=1.3.0
     - pycairo
     - scanpy
