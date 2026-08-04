@@ -1,6 +1,6 @@
 {% set python_min = '3.10' %}
 {% set name = "schist" %}
-{% set version = "0.9.4" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name }}
@@ -8,23 +8,21 @@ package:
 
 source:
   url: https://github.com/dawe/schist/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 7d5514c2f9850a266bf0d3246d9ca0bddfcd9c11c963daf0169b1f3fe932cb92
+  sha256: 577c47b51c0ff6e5d00f81b8b176d448f91f33d5cc5e6ca813e278cdfe3c8241
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv "
 
 requirements:
   host:
     - python {{ python_min }}
     - pip
-    - "graph-tool-base >=2.90,<=2.98"
-    - joblib >=1.3.0
+    - "graph-tool-base >=3.0"
   run:
     - python >={{ python_min }}
-    - "graph-tool-base >=2.90,<=2.98"
-    - joblib >=1.3.0
+    - "graph-tool-base >=3.0"
     - pycairo
     - scanpy
     - numpy
